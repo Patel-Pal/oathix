@@ -1,0 +1,89 @@
+{
+  "name": "oathix",
+  "version": "3.3.0",
+  "description": "Zero-dependency OAuth 2.0 client for Node.js — Google, GitHub, Facebook, Discord, Microsoft, Snapchat, TikTok, LinkedIn, Spotify & Twitter/X. Token refresh, user profiles, popup/redirect login, token storage, TypeScript support. 3 lines to add social login.",
+
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/browser/auth.esm.js",
+
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./browser": {
+      "require": "./dist/browser/auth.cjs.js",
+      "import": "./dist/browser/auth.esm.js",
+      "types": "./dist/browser/types.d.ts"
+    },
+    "./browser/popup": {
+      "require": "./dist/browser/popup.cjs.js",
+      "import": "./dist/browser/popup.esm.js"
+    }
+  },
+
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "oauth-client",
+    "social-login",
+    "social-auth",
+    "authentication",
+    "auth",
+    "login",
+    "sso",
+    "google-oauth",
+    "github-oauth",
+    "facebook-login",
+    "discord-oauth",
+    "microsoft-oauth",
+    "snapchat-login",
+    "tiktok-oauth",
+    "linkedin-oauth",
+    "spotify-auth",
+    "twitter-oauth",
+    "token-refresh",
+    "user-profile",
+    "pkce",
+    "sdk",
+    "zero-dependency",
+    "typescript",
+    "node-oauth"
+  ],
+
+  "author": "palpatel08 <palpatel08124@gmail.com>",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palpatel08/oathix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/palpatel08/oathix/issues"
+  },
+  "homepage": "https://github.com/palpatel08/oathix#readme",
+
+  "engines": {
+    "node": ">=16.0.0"
+  },
+
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "npm run build && npm test"
+  },
+
+  "devDependencies": {
+    "fast-check": "^3.15.0",
+    "jest": "^29.7.0"
+  }
+}

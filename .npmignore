@@ -1,0 +1,42 @@
+# Source (we publish dist/ instead)
+src/
+scripts/
+
+# Source control
+.git/
+.gitignore
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Tests
+tests/
+coverage/
+jest.config.js
+
+# Specs and docs
+.kiro/
+use.md
+UPDATE.md
+PUBLISH.md
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test app
+test-app/
